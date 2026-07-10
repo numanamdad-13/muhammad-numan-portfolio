@@ -1,0 +1,50 @@
+======================================================================
+                     MUHAMMAD NUMAN - RESUME
+======================================================================
+Software Engineering Student | C++ Developer | Frontend Web Developer
+Lahore, Pakistan | numan@example.com | github.com/muhammad-numan
+
+----------------------------------------------------------------------
+EDUCATION
+----------------------------------------------------------------------
+University of Engineering and Technology (UET) Lahore (2023 - Present)
+Bachelor of Science in Software Engineering (BS SE)
+CGPA: 3.8/4.0
+
+Relevant Coursework:
+- Data Structures & Algorithms (DSA)
+- Object-Oriented Programming (OOP)
+- Database Management Systems (DBMS)
+- Software Design & Architecture
+
+----------------------------------------------------------------------
+TECHNICAL SKILLS
+----------------------------------------------------------------------
+Languages: C++, ES6 JavaScript, HTML5, CSS3
+Concepts:  OOP, DSA, File Handling, Problem Solving, Algorithmic Analysis
+Tools:     Git, GitHub, VS Code, Visual Studio
+
+----------------------------------------------------------------------
+PROJECTS
+----------------------------------------------------------------------
+1. Smart Campus Management System (DSA & Graphs)
+   - Graph-based campus navigation system using BFS, DFS, and Dijkstra's.
+   - Built custom structures (BSTs, Queues, Stacks, Hash Tables) in C++.
+
+2. Hospital Management System (C++ Console / OOP)
+   - Built with object-oriented paradigms and file streams.
+   - Features doctor allocations, patient registration, and invoices.
+
+3. Food Express System (C++ DSA Console)
+   - Console delivery manager utilizing sorting lists, queues, and order logs.
+
+4. Coffee Shop Website (Frontend Web Dev)
+   - Responsive modern UI using flexbox, CSS variables, and layout animation.
+
+----------------------------------------------------------------------
+AWARDS & ENGAGEMENT
+----------------------------------------------------------------------
+- Active Member of UET Computing Society
+- HackerRank C++ Certified (5-star Problem Solving badge)
+- Top 10% in University Coding Challenges
+======================================================================

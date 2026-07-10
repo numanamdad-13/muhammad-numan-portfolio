@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found | Muhammad Numan Portfolio</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    :root {
+      --font-heading: 'Space Grotesk', sans-serif;
+      --font-body: 'Outfit', sans-serif;
+      --bg-primary: #0b0f19;
+      --primary-color: #6366f1;
+      --secondary-color: #a855f7;
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --card-bg: rgba(19, 25, 38, 0.6);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --radius-md: 16px;
+      --glass-blur: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      overflow: hidden;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Animated background */
+    .animated-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .glowing-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(120px);
+      opacity: 0.2;
+    }
+
+    .orb-1 {
+      width: 400px;
+      height: 400px;
+      background: var(--primary-color);
+      top: 15%;
+      right: 10%;
+      animation: float1 10s infinite alternate ease-in-out;
+    }
+
+    .orb-2 {
+      width: 450px;
+      height: 450px;
+      background: var(--secondary-color);
+      bottom: 10%;
+      left: 10%;
+      animation: float2 15s infinite alternate ease-in-out;
+    }
+
+    @keyframes float1 {
+      0% { transform: translate(0, 0) scale(1); }
+      100% { transform: translate(-50px, 40px) scale(1.1); }
+    }
+
+    @keyframes float2 {
+      0% { transform: translate(0, 0) scale(1); }
+      100% { transform: translate(60px, -40px) scale(1.15); }
+    }
+
+    .error-container {
+      position: relative;
+      z-index: 1;
+      width: 90%;
+      max-width: 550px;
+      padding: 50px 40px;
+      text-align: center;
+      background: var(--card-bg);
+      backdrop-filter: blur(var(--glass-blur));
+      -webkit-backdrop-filter: blur(var(--glass-blur));
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-md);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+      animation: reveal 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    @keyframes reveal {
+      from { opacity: 0; transform: translateY(40px) scale(0.95); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .error-code {
+      font-family: var(--font-heading);
+      font-size: 8rem;
+      font-weight: 800;
+      line-height: 1;
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+      letter-spacing: -0.05em;
+      position: relative;
+      animation: pulseCode 3s infinite alternate ease-in-out;
+    }
+
+    @keyframes pulseCode {
+      0% { transform: scale(1); filter: drop-shadow(0 0 0px rgba(99, 102, 241, 0)); }
+      100% { transform: scale(1.03); filter: drop-shadow(0 5px 15px rgba(99, 102, 241, 0.25)); }
+    }
+
+    .error-title {
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .error-desc {
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: none;
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+      color: #ffffff;
+      font-size: 0.95rem;
+      box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3);
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(99, 102, 241, 0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Animated Orbs background -->
+  <div class="animated-bg">
+    <div class="glowing-orb orb-1"></div>
+    <div class="glowing-orb orb-2"></div>
+  </div>
+
+  <div class="error-container">
+    <div class="error-code">404</div>
+    <h1 class="error-title">Lost in Cyberspace?</h1>
+    <p class="error-desc">The file or route you are searching for does not exist, or has been relocated. Let's return you to standard operations.</p>
+    <a href="index.html" class="btn"><i class="fa-solid fa-house"></i> Return to Safety</a>
+  </div>
+
+</body>
+</html>
